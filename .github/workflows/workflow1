@@ -1,0 +1,11 @@
+name: workflow1
+
+on:
+  schedule:
+    - cron: '0 0 1 1 *'
+ 
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello world
